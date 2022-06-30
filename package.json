@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "yarn start",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "yarn vercel dev",
+    "lint": "next lint",
+    "setup": "yarn vercel login && yarn vercel link"
   },
   "dependencies": {
     "next": "12.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "vercel": "^25.2.2"
   },
   "devDependencies": {
     "@types/node": "18.0.0",
